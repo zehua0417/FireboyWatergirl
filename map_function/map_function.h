@@ -1,4 +1,5 @@
-#ifndef define _MAP_FUNC
+#ifndef _MAP_FUNC
+#define _MAP_FUNC
 
 /**
  * @brief 根据难度选择, 打印地图
@@ -12,16 +13,14 @@ void init_diamondlist();
  * @brief 从文件读入宝石信息,生成链表
  * @param dif nandu,见select_dif()函数
  */
-void *load_diamond(int  dif);
+void load_diamond(int  dif);
 
 /**
  * @brief 从链表中删除n号宝石
  * @param dif 难度
  * @param n 要删除的宝石编号
- * 
- * @return struct diamond *head 宝石链表表头
  */
-struct diamond *del_diamond(int dif, int n);
+void del_diamond(int dif, int n);
 
 /**
  * @brief 打印宝石

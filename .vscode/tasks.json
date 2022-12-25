@@ -1,14 +1,27 @@
 {
     "tasks": [
         {
-            "type": "cppbuild",
+            "type": "shell",//需要改为shell
             "label": "C/C++: cl.exe 生成活动文件",
             "command": "cl.exe",
             "args": [
                 "/Zi",
                 "/EHsc",
+                "kernel32.lib",//这里开始
+				"gdi32.lib",
+				"winspool.lib",
+				"comdlg32.lib",
+				"advapi32.lib",
+				"shell32.lib",
+				"ole32.lib",
+				"oleaut32.lib",
+				"uuid.lib",
+				"odbc32.lib",
+				"odbccp32.lib",
+				"user32.lib",//这里结束
                 "/nologo",
-                "/Fe${fileDirname}\\${fileBasenameNoExtension}.exe",
+                "/Fe:",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe",
                 "${file}"
             ],
             "options": {

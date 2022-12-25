@@ -6,8 +6,9 @@
 #define WIDTH 640
 #define HEIGHT 480
 #define NUM_evt 10
+#define DIAWIDTH 10
+#define DIAHEIGHT 10
 
-IMAGE map;
 
 /**
  * @brief 图宝石链表节点(各难度设置一个文件)
@@ -94,17 +95,17 @@ int main (void)
 
 void set_map(int dif)
 {
+    IMAGE map;
     switch(dif)
     {
         case 1: 
-            loadimage(&map,_T("./image/lowlevel_map"),WIDTH,HEIGHT);
-            putimage(0,0,&map);
+            loadimage(&map,_T("./image/lowlevel_map.png"),WIDTH,HEIGHT);
             break;
         case 2:
-            loadimage(&map,_T("./image/hightlevel_map"),WIDTH,HEIGHT);
-            putimage(0,0,&map);
+            loadimage(&map,_T("./image/hightlevel_map.png"),WIDTH,HEIGHT);
             break;
     }
+    putimage(0,0,&map);
 }
 
 //================================================================================
@@ -116,7 +117,7 @@ void init_diamondlist()
     end = head;
 }
 
-void *load_diamond(int  dif)
+void load_diamond(int  dif)
 {
     init_diamondlist();
     struct diamond *ptr = (struct diamond *)malloc(sizeof(struct diamond));
@@ -130,8 +131,9 @@ void *load_diamond(int  dif)
             break;
         case 2:
             fp = fopen("./data/hightlevel_diamond.txt","a+");
+            break;
     }
-    while(fscanf(fp,"%d %f %f %d\n"))
+    while(fscanf(fp,"%d %f %f %d\n",&ptr->type,&ptr->x,&ptr->y,&ptr->n))
     {
         if(head->next = NULL)
         {
@@ -171,3 +173,29 @@ void del_diamond(int n)
     }
 }
 
+void set_diamond(int dif,int n)
+{
+    struct diamond *p = head->next;
+    while(p!=NULL)
+    {
+        IMAGE diamage;
+        int n = p-> n;
+
+        switch(p->type)
+        {
+            case 1:
+                loadimage(&diamage, _T("./image/bluediamond.png"),DIAWIDTH,DIAHEIGHT); 
+                break;
+            case 2: 
+                loadimage(&diamage, _T("./image/raddiamond.png"),DIAWIDTH,DIAHEIGHT); 
+                break;
+            case 3: 
+                loadimage(&diamage, _T("./image/greendiamond.png"),DIAWIDTH,DIAHEIGHT); 
+                break;
+            break;
+        }
+        putimage(p->x,p->y,&diamage);
+
+        p = p->next;
+    }
+}
