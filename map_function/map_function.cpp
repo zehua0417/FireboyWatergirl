@@ -99,11 +99,11 @@ void test()
     setbkcolor(GREEN);
     cleardevice();
     // set_map(1);
-    //IMAGE diamage;
-    //loadimage(&diamage, _T("./image/bluediamond.png"), DIAWIDTH, DIAHEIGHT);
-    //transparentimage(NULL, 100, 100, &diamage);
-    //loadimage(&diamage, _T("./image/reddiamond.png"), DIAWIDTH, DIAHEIGHT);
-    //transparentimage(NULL, 200, 100, &diamage);
+    // IMAGE diamage;
+    // loadimage(&diamage, _T("./image/bluediamond.png"), DIAWIDTH, DIAHEIGHT);
+    // transparentimage(NULL, 100, 100, &diamage);
+    // loadimage(&diamage, _T("./image/reddiamond.png"), DIAWIDTH, DIAHEIGHT);
+    // transparentimage(NULL, 200, 100, &diamage);
     load_diamond(1);
     set_diamond();
 
@@ -157,7 +157,7 @@ void load_diamond(int dif)
         fp = fopen("./data/highlevel_diamond.txt", "a+");
         break;
     }
-    while (fscanf(fp, "%d %f %f %d\n", &ptr->type, &ptr->x, &ptr->y, &ptr->n))
+    while (fscanf(fp, "%2d %4f %4f %2d\n", &ptr->type, &ptr->x, &ptr->y, &ptr->n))
     {
         if (head->next = NULL)
         {
@@ -230,7 +230,6 @@ void set_diamond()
             break;
         case 3:
             loadimage(&diamage, _T("./image/greendiamond.png"), DIAWIDTH, DIAHEIGHT);
-            break;
             break;
         }
         putimage(p->x, p->y, &diamage);
