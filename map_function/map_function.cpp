@@ -2,13 +2,18 @@
 //#undef _UNICODE
 #include<stdio.h>
 #include<easyx.h>
+#include<conio.h>
+#include<math.h>
 #include"map_function.h"
+#pragma comment( lib, "MSIMG32.LIB")
+
 #define WIDTH 640
 #define HEIGHT 480
+#define DIAWIDTH 110
+#define DIAHEIGHT 106
+#define EVTWIDTH 50
+#define EVTHEIGHT 10 
 #define NUM_evt 10
-#define DIAWIDTH 10
-#define DIAHEIGHT 10
-
 
 /**
  * @brief 图宝石链表节点(各难度设置一个文件)
@@ -33,7 +38,7 @@ typedef struct model1
 	int x1 = 0, x2 = 1100, y1 = 699, y2 = 714;//714
 }model1_;
 
-model1_ floor[10][100], roof[10][100];//模型结构体数组(每个地图一个)
+model1_ _floor[10][100], roof[10][100];//模型结构体数组(每个地图一个)
 
 /**
  * @brief 左右墙壁模型结构体(来自CSDN)
@@ -58,7 +63,7 @@ struct evt
     double dis_now;     //电梯此时的位置(相对起点的距离)<=distance
 };
 
-struct evt lowlevel_wvt[NUM_evt];    //设置电梯结构体数组, 每个关卡一个
+struct evt evt_data[NUM_evt]={0};    //设置电梯结构体数组, 每个关卡一个
 
 /**
  * @brief 按钮结构体
@@ -71,20 +76,37 @@ struct button
     double status;  //状态即被按下的深度
 };
 
-struct button lowlevel_button[NUM_evt];  //设置按钮结构体数组, 每个关卡一个
+struct button button_data[NUM_evt]={0};  //设置按钮结构体数组, 每个关卡一个
 
 //=====================================================================================
 //=====================================================================================
 //=====================================================================================
+
+void transparentimage(IMAGE* dstimg, int x, int y, IMAGE* srcimg) //新版png
+{
+    HDC dstDC = GetImageHDC(dstimg);
+    HDC srcDC = GetImageHDC(srcimg);
+    int w = srcimg->getwidth();
+    int h = srcimg->getheight();
+    BLENDFUNCTION bf = { AC_SRC_OVER, 0, 255, AC_SRC_ALPHA };
+    AlphaBlend(dstDC, x, y, w, h, srcDC, 0, 0, w, h, bf);
+}
 
 void test()
 {
     initgraph(WIDTH,HEIGHT);
     BeginBatchDraw();
-
-    set_map(1);
+    setbkcolor(GREEN);
+    cleardevice();
+    //set_map(1);
+        IMAGE diamage;
+        loadimage(&diamage, _T("./image/bluediamond.png"),DIAWIDTH,DIAHEIGHT); 
+        transparentimage(NULL,100,100,&diamage);
+        loadimage(&diamage, _T("./image/reddiamond.png"),DIAWIDTH,DIAHEIGHT); 
+        transparentimage(NULL,200,100,&diamage);
 
     FlushBatchDraw();
+    _getch();
 }
 
 int main (void)
@@ -130,7 +152,7 @@ void load_diamond(int  dif)
             fp = fopen("./data/lowlevel_diamond.txt","a+");
             break;
         case 2:
-            fp = fopen("./data/hightlevel_diamond.txt","a+");
+            fp = fopen("./data/highlevel_diamond.txt","a+");
             break;
     }
     while(fscanf(fp,"%d %f %f %d\n",&ptr->type,&ptr->x,&ptr->y,&ptr->n))
@@ -173,6 +195,21 @@ void del_diamond(int n)
     }
 }
 
+int search_diamond(double x,double y)
+{
+    while(20030417)
+    {
+        struct diamond *find = head->next;
+        while(find && !(fabs(find->x-x) <= 3 && fabs(find->y-y)<=3))
+            find = find->next;
+        if(find)
+        {
+            return find->n;
+        }
+        return 0;
+    }
+}
+
 void set_diamond(int dif,int n)
 {
     struct diamond *p = head->next;
@@ -198,4 +235,91 @@ void set_diamond(int dif,int n)
 
         p = p->next;
     }
+}
+
+//===================================================================================`
+
+//void init_evt()
+//{   
+//    struct 
+//}
+
+void load_ect(int dif)
+{
+    FILE *fp=NULL;
+    switch(dif)
+    {
+        case1:
+            fp = fopen("./data/lowlevel_evt.txt","a+");
+            break;
+        case 2:
+            fp = fopen("./data/highlevel_evt.txt","a+");
+            break;
+    }
+    int i=0;
+    while(fscanf(fp,"%d %d %d %d %lf %lf\n",
+    &evt_data[i].x,&evt_data[i].y ,&evt_data[i].n ,
+    &evt_data[i].type ,&evt_data[i].distance,&evt_data[i].dis_now))
+    {
+        i++;
+    }
+    fclose(fp);
+}
+
+void set_evt()
+{
+    IMAGE evtimage;
+    loadimage(&evtimage,_T("./image/evt.png"),EVTWIDTH,EVTHEIGHT);
+    int x=0,y=0;
+    for(int i=0;evt_data[i].x!=0;i++)
+    {
+        switch(evt_data[i].type)
+        { 
+            case 1:
+                x=evt_data[i].x;
+                y=evt_data[i].y+evt_data[i].dis_now;
+                break;
+            case 2:
+                x=evt_data[i].x;
+                y=evt_data[i].y-evt_data[i].dis_now;
+                break;
+            case 3:
+                x=evt_data[i].x+evt_data[i].dis_now;
+                y=evt_data[i].y;
+                break;
+            case 4:
+                x=evt_data[i].x-evt_data[i].dis_now;
+                y=evt_data[i].y;
+                break;
+        }
+        transparentimage(NULL,x,y,&evtimage);
+    }
+}
+
+//===============================================================================
+
+void load_button(int dif)
+{
+    FILE *fp = NULL;
+    switch(dif)
+    {
+        case 1:
+            fp = fopen("./data/lowlevel_button.txt","a+");
+            break;
+        case 2:
+            fp = fopen("./data/hightlevel_button.txt","a+");
+            break;
+    }
+    int i=0;
+    while(fscanf(fp,"%d %d %d %lf\n",
+    &button_data[i].x,&button_data[i].y,&button_data[i].n,&button_data[i].status))
+    {
+        i++;
+    }
+    fclose(fp);
+}
+
+void set_button()
+{
+
 }

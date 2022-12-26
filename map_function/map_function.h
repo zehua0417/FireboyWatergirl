@@ -23,10 +23,22 @@ void load_diamond(int  dif);
 void del_diamond(int dif, int n);
 
 /**
+ * @brief 根据横纵坐标查找宝石
+ * @param x 横坐标
+ * @param y 纵坐标
+ * 
+ * @return 1, 2 ,... 宝石编号
+ *         0, 未找到
+*/
+int search_diamond(double x,double y);
+
+/**
  * @brief 打印宝石
  * @param head 宝石链表表头
  */
 void set_diamond(struct diamond *head);
+
+void init_diamond();
 
 /**
  * @breif 从文件读入电梯信息
@@ -34,13 +46,12 @@ void set_diamond(struct diamond *head);
  * 
  * @return 电梯结构体数组首地址
  */
-struct evt *laod_evt(int dif);
+void load_evt(int dif);
 
 /**
  * @brief 打印电梯
- * @param evt_head 电梯结构体数组首地址
  */
-void set_evt(struct evt *evt_head);
+void set_evt();
 
 /**
  * @brief 从文件读入按钮信息
@@ -48,12 +59,11 @@ void set_evt(struct evt *evt_head);
  * 
  * @return 按钮结构体数组收哦地址
  */
-struct button *load_button(int dif);
+void load_button(int dif);
 
 /**
  * @brief 打印按钮
- * @param button_head 按钮结构体数组首地址
  */
-void set_button(struct button *button_head);
+void set_button();
 
 #endif
