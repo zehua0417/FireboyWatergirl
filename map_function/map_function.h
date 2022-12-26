@@ -36,7 +36,7 @@ int search_diamond(double x,double y);
  * @brief 打印宝石
  * @param head 宝石链表表头
  */
-void set_diamond(struct diamond *head);
+void set_diamond();
 
 void init_diamond();
 

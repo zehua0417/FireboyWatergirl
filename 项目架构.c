@@ -123,8 +123,6 @@ int select_dif();
  */
 void set_map(int dif);
 
-void init_diamondlist();
-
 /**
  * @brief 从文件读入宝石信息,生成链表
  * @param dif nandu,见select_dif()函数
@@ -135,14 +133,18 @@ struct diamond *load_diamond(int  dif);
 
 /**
  * @brief 从链表中删除n号宝石
+ * @param dif 难度
  * @param n 要删除的宝石编号
+ * 
+ * @return struct diamond *head 宝石链表表头
  */
-void del_diamond(int n);
+struct diamond *del_diamond(int dif, int n);
 
 /**
  * @brief 打印宝石
+ * @param head 宝石链表表头
  */
-void set_diamond();
+void set_diamond(struct diamond *head);
 
 /**
  * @breif 从文件读入电梯信息
@@ -150,7 +152,7 @@ void set_diamond();
  * 
  * @return 电梯结构体数组首地址
  */
-struct evt *laod_evt(int dif);
+struct evt *load_evt(int dif);
 
 /**
  * @brief 打印电梯
