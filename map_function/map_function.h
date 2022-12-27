@@ -20,17 +20,17 @@ void load_diamond(int  dif);
  * @param dif 难度
  * @param n 要删除的宝石编号
  */
-void del_diamond(int dif, int n);
+void del_diamond( int n);
 
 /**
  * @brief 根据横纵坐标查找宝石
  * @param x 横坐标
  * @param y 纵坐标
- * 
+ *
  * @return 1, 2 ,... 宝石编号
  *         0, 未找到
 */
-int search_diamond(double x,double y);
+int search_diamond(double x, double y);
 
 /**
  * @brief 打印宝石
@@ -43,7 +43,7 @@ void init_diamond();
 /**
  * @breif 从文件读入电梯信息
  * @param dif 难度
- * 
+ *
  * @return 电梯结构体数组首地址
  */
 void load_evt(int dif);
@@ -56,7 +56,7 @@ void set_evt();
 /**
  * @brief 从文件读入按钮信息
  * @param dif 难度
- * 
+ *
  * @return 按钮结构体数组收哦地址
  */
 void load_button(int dif);
