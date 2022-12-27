@@ -223,6 +223,20 @@ void set_diamond()
 	}
 }
 
+void free_diamond()
+{
+	if (head == NULL)
+		return;
+	struct diamond* ptr = head->next;
+	struct diamond* pdel = NULL;
+	while (ptr != NULL)
+	{
+		pdel = ptr->next;
+		free(ptr);
+		ptr = pdel;
+	}
+	head->next = NULL;
+}
 //===================================================================================`
 
 // void init_evt()

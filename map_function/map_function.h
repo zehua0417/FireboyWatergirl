@@ -8,6 +8,7 @@
 void set_map(int dif);
 
 void init_diamondlist();
+void free_diamond();
 
 /**
  * @brief 从文件读入宝石信息,生成链表
