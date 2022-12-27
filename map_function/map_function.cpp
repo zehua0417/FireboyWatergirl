@@ -146,8 +146,6 @@ void load_diamond(int dif)
 		if (head->next == NULL)
 		{
 			head->next = ptr;
-			int w=ptr->type;
-			int e = ptr->x;
 			end = ptr;
 		}
 		else
@@ -204,10 +202,7 @@ void set_diamond()
 	struct diamond* p = head->next;
 	while (p != NULL)
 	{
-		int q = head->next->type;
 		IMAGE diamage;
-		int x = p->x;
-		int n = p->n;
 		int type = p->type;
 
 		switch (p->type)
@@ -256,10 +251,6 @@ void load_evt(int dif)
 		&evt_data[i].x, &evt_data[i].y, &evt_data[i].n,
 		&evt_data[i].type, &evt_data[i].distance, &evt_data[i].dis_now))
 	{
-		int x = evt_data[i].x;
-		int y = evt_data[i].y;
-		int n = evt_data[i].n;
-		int t = evt_data[i].type;
 		i++;
 	}
 	fclose(fp);
