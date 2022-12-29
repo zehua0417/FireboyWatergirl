@@ -1,0 +1,234 @@
+﻿  Judge.cpp
+  main.cpp
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(55,2): error C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(63,2): error C2665: “settextstyle”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(249,6): message : 可能是“void settextstyle(int,int,LPCTSTR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(63,2): message : “void settextstyle(int,int,LPCTSTR)”: 无法将参数 3 从“const char [5]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(63,22): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(63,2): message : 尝试匹配参数列表“(int, int, const char [5])”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(67,2): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(67,2): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“char *”转换为“TCHAR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(67,38): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(67,2): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“char *”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(67,38): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(67,2): message : 尝试匹配参数列表“(int, int, char *)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(95,2): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(95,2): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [31]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(95,27): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(95,2): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [31]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(95,27): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(95,2): message : 尝试匹配参数列表“(IMAGE *, const char [31], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(118,2): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(118,2): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [31]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(118,27): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(118,2): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [31]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(118,27): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(118,2): message : 尝试匹配参数列表“(IMAGE *, const char [31], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(141,2): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(141,2): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [31]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(141,27): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(141,2): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [31]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(141,27): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(141,2): message : 尝试匹配参数列表“(IMAGE *, const char [31], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(221,2): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(221,2): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [8]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(221,18): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(221,2): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [8]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(221,18): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(221,2): message : 尝试匹配参数列表“(IMAGE *, const char [8], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(264,4): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(264,4): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [13]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(264,21): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(264,4): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [13]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(264,21): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(264,4): message : 尝试匹配参数列表“(IMAGE *, const char [13], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(316,4): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(316,4): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [8]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(316,23): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(316,4): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [8]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(316,23): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(316,4): message : 尝试匹配参数列表“(IMAGE *, const char [8], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(325,5): error C2665: “settextstyle”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(249,6): message : 可能是“void settextstyle(int,int,LPCTSTR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(325,5): message : “void settextstyle(int,int,LPCTSTR)”: 无法将参数 3 从“const char [5]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(325,26): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(325,5): message : 尝试匹配参数列表“(int, int, const char [5])”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(326,5): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(326,5): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [9]”转换为“TCHAR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(326,25): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(326,5): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [9]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(326,25): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(326,5): message : 尝试匹配参数列表“(int, int, const char [9])”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(353,4): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(353,4): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [8]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(353,23): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(353,4): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [8]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(353,23): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(353,4): message : 尝试匹配参数列表“(IMAGE *, const char [8], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(362,5): error C2665: “settextstyle”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(249,6): message : 可能是“void settextstyle(int,int,LPCTSTR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(362,5): message : “void settextstyle(int,int,LPCTSTR)”: 无法将参数 3 从“const char [5]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(362,26): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(362,5): message : 尝试匹配参数列表“(int, int, const char [5])”时
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(363,5): error C2665: “outtextxy”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(226,6): message : 可能是“void outtextxy(int,int,TCHAR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(363,5): message : “void outtextxy(int,int,TCHAR)”: 无法将参数 3 从“const char [9]”转换为“TCHAR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(363,25): message : 没有使该转换得以执行的上下文
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(225,6): message : 或    “void outtextxy(int,int,LPCTSTR)”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(363,5): message : “void outtextxy(int,int,LPCTSTR)”: 无法将参数 3 从“const char [9]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(363,25): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\main.cpp(363,5): message : 尝试匹配参数列表“(int, int, const char [9])”时
+  map_function.cpp
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(296,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(300,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(303,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(307,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  music.cpp
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(19,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [19]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(19,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(19,2): message : 尝试匹配参数列表“(const char [19], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(20,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [26]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(20,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(20,2): message : 尝试匹配参数列表“(const char [26], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(25,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [19]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(25,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(25,2): message : 尝试匹配参数列表“(const char [19], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(26,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [26]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(26,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(26,2): message : 尝试匹配参数列表“(const char [26], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(30,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(30,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(30,2): message : 尝试匹配参数列表“(const char [14], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(31,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(31,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(31,2): message : 尝试匹配参数列表“(const char [14], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(35,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(35,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(35,2): message : 尝试匹配参数列表“(const char [14], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(36,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(36,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(36,2): message : 尝试匹配参数列表“(const char [14], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(40,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(40,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(40,2): message : 尝试匹配参数列表“(const char [14], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(41,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [14]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(41,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(41,2): message : 尝试匹配参数列表“(const char [14], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(46,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [18]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(46,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(46,2): message : 尝试匹配参数列表“(const char [18], int, int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(47,2): error C2664: “MCIERROR mciSendStringW(LPCWSTR,LPWSTR,UINT,HWND)”: 无法将参数 1 从“const char [19]”转换为“LPCWSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(47,16): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22000.0\um\mciapi.h(87,1): message : 参见“mciSendStringW”的声明
+D:\Project\C++ Project\easyx Study\fbAndwg\music.cpp(47,2): message : 尝试匹配参数列表“(const char [19], int, int, int)”时
+  Rolecontrol.cpp
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(44,2): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(44,2): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [11]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(44,24): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(44,2): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [11]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(44,24): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(44,2): message : 尝试匹配参数列表“(IMAGE *, const char [11], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(45,2): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(45,2): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [11]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(45,23): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(45,2): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“const char [11]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(45,23): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(45,2): message : 尝试匹配参数列表“(IMAGE *, const char [11], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(89,3): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(89,3): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(89,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(89,3): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(89,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(89,3): message : 尝试匹配参数列表“(IMAGE *, char [256], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(94,3): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(94,3): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(94,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(94,3): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(94,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(94,3): message : 尝试匹配参数列表“(IMAGE *, char [256], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(99,3): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(99,3): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(99,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(99,3): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(99,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(99,3): message : 尝试匹配参数列表“(IMAGE *, char [256], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(104,3): error C2665: “loadimage”: 没有重载函数可以转换所有参数类型
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(259,6): message : 可能是“void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(104,3): message : “void loadimage(IMAGE *,LPCTSTR,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(104,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.34.31933\include\easyx.h(258,6): message : 或    “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(104,3): message : “void loadimage(IMAGE *,LPCTSTR,int,int,bool)”: 无法将参数 2 从“char [256]”转换为“LPCTSTR”
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(104,30): message : 指向的类型不相关; 转换需要 reinterpret_cast、C 样式强制转换或带圆括号的函数样式强制转换
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(104,3): message : 尝试匹配参数列表“(IMAGE *, char [256], int, int)”时
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(109,14): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(109,11): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(110,14): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(110,11): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(139,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(139,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(160,30): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(160,27): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(164,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(164,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(176,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(176,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(191,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(191,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(200,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(200,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(214,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(214,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(236,30): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(236,27): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(241,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(241,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(249,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(249,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(260,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(260,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(270,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(270,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(291,16): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(291,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(298,16): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(298,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...

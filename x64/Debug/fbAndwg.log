@@ -1,0 +1,41 @@
+﻿  main.cpp
+  map_function.cpp
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(296,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(300,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(303,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\map_function.cpp(307,22): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  Rolecontrol.cpp
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(109,14): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(109,11): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(110,14): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(110,11): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(139,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(139,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(160,30): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(160,27): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(164,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(164,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(176,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(176,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(191,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(191,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(200,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(200,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(214,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(214,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(236,30): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(236,27): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(241,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(241,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(249,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(249,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(260,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(260,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(270,29): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(270,26): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(291,16): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(291,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(298,16): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+D:\Project\C++ Project\easyx Study\fbAndwg\Rolecontrol.cpp(298,13): warning C4244: “参数”: 从“double”转换到“int”，可能丢失数据
+  正在生成代码...
+  fbAndwg.vcxproj -> D:\Project\C++ Project\easyx Study\fbAndwg\x64\Debug\fbAndwg.exe
